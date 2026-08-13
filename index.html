@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="NNR Global Technologies — Scalable AI-powered digital products, intelligent software systems and future-ready technology solutions." />
+  <title>NNR Global Technologies | AI Product Engineering</title>
+
+  <!-- Google Fonts: Open Sans (Bold), Playfair Display (Serif), Sora & Inter (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- TOP SCROLL PROGRESS INDICATOR -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- MINIMAL TRANSPARENT NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <svg class="nav-logo-svg" viewBox="0 0 310 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="NNR Global Technologies">
+          <!-- Atomic orbit symbol -->
+          <g transform="translate(4, 8) scale(0.85)">
+            <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0284C7" stroke-width="2" fill="none" transform="rotate(0 30 30)"/>
+            <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0EA5E9" stroke-width="2" fill="none" transform="rotate(60 30 30)"/>
+            <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0284C7" stroke-width="2" fill="none" transform="rotate(-60 30 30)"/>
+            <circle cx="30" cy="30" r="4" fill="#0284C7"/>
+            <circle cx="30" cy="3" r="2.5" fill="#0EA5E9"/>
+            <circle cx="53.4" cy="43.5" r="2.5" fill="#0284C7"/>
+            <circle cx="6.6" cy="43.5" r="2.5" fill="#0284C7"/>
+          </g>
+          <line x1="72" y1="12" x2="72" y2="58" stroke="#0284C7" stroke-width="1.5" opacity="0.3"/>
+          <text x="84" y="45" font-family="'Sora','Inter',sans-serif" font-weight="800" font-size="28" fill="#0F172A" letter-spacing="2">NNR</text>
+          <text x="85" y="57" font-family="'Sora','Inter',sans-serif" font-weight="600" font-size="8" fill="#0284C7" opacity="0.9" letter-spacing="3.5">GLOBAL TECHNOLOGIES</text>
+        </svg>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#careers" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-talk" id="nav-talk-btn">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION (~100VH) -->
+  <section class="hero-page" id="home">
+    <div class="hero-container">
+      
+      <!-- LEFT COLUMN: CONTENT -->
+      <div class="hero-left">
+        <div class="hero-badge fade-in-up">
+          <span class="badge-dot"></span>
+          AI-POWERED PRODUCT DEVELOPMENT COMPANY
+        </div>
+
+        <h1 class="hero-heading fade-in-up delay-1">
+          We Build <span class="highlight-gradient">AI Products</span><br />
+          That Solve Real-World Problems
+        </h1>
+
+        <div class="hero-cta-group fade-in-up delay-2">
+          <a href="#services" class="btn-primary-gradient" id="explore-btn">
+            <span>Explore Services</span>
+            <span class="btn-arrow">&#8594;</span>
+          </a>
+          <a href="contact.html" class="btn-secondary-outline" id="consultation-btn">
+            Book a Consultation
+          </a>
+        </div>
+
+        <!-- STATS BAR -->
+        <div class="hero-stats-box glass-card fade-in-up delay-4">
+          <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Products Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Uptime Delivered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: 3D INTERACTIVE AI NEURAL ENGINE VISUALIZATION -->
+      <div class="hero-right fade-in-right delay-2">
+        <div class="ai-neural-stage" id="ai-stage">
+          <!-- THREE.JS 3D WEBGL AI CANVAS -->
+          <canvas id="threeAiCanvas"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our Product Engineering <span class="highlight-gradient">Services</span></h2>
+        <p class="section-subtitle">End-to-end product development services for startups to enterprises</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass-card fade-in-up delay-1">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="card-title">Product Strategy</h3>
+          <p class="card-desc">We validate ideas, create product roadmaps and go-to-market strategy. Data-driven decisions to maximize product success.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up delay-2">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="card-title">AI Product Development</h3>
+          <p class="card-desc">AI applications, LLM integrations, computer vision, NLP and more. Intelligent solutions that transform business outcomes.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up delay-3">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="card-title">Custom Software Development</h3>
+          <p class="card-desc">Scalable, secure and high-performance software applications built with cutting-edge technologies for modern enterprises.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up delay-1">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="card-title">MVP Development</h3>
+          <p class="card-desc">Rapid MVP development for startups to validate product hypotheses, attract investors and gain real user traction fast.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up delay-2">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3 class="card-title">Product Design &amp; UX</h3>
+          <p class="card-desc">User-centric product design, wireframing, prototyping and UI/UX design that engages users and drives product adoption.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+
+        <div class="service-card glass-card fade-in-up delay-3">
+          <div class="card-icon-wrapper">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3 class="card-title">Maintenance &amp; Support</h3>
+          <p class="card-desc">Continuous support, performance optimization, security monitoring and feature enhancements for seamless reliability.</p>
+          <a href="contact.html" class="card-link">Learn More <span>&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. EXPERTISE / TECH STACK SECTION -->
+  <section class="expertise" id="expertise">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Technology Stack</span>
+        <h2 class="section-title">Built with <span class="highlight-gradient">Cutting-Edge</span> Tech</h2>
+        <p class="section-subtitle">We leverage modern frameworks and robust tools to engineering high-performance software</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card glass-card fade-in-up delay-1">
+          <div class="tech-logo">🐍</div>
+          <span class="tech-name">Python</span>
+          <span class="tech-desc">AI &amp; Data Engine</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-2">
+          <div class="tech-logo">🔥</div>
+          <span class="tech-name">PyTorch</span>
+          <span class="tech-desc">Deep Learning</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-3">
+          <div class="tech-logo">⚛️</div>
+          <span class="tech-name">React / Next.js</span>
+          <span class="tech-desc">Frontend Web</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-1">
+          <div class="tech-logo">⚡</div>
+          <span class="tech-name">FastAPI</span>
+          <span class="tech-desc">High-Speed Microservices</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-2">
+          <div class="tech-logo">🐳</div>
+          <span class="tech-name">Docker</span>
+          <span class="tech-desc">Containerization</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-3">
+          <div class="tech-logo">🐘</div>
+          <span class="tech-name">PostgreSQL</span>
+          <span class="tech-desc">Relational Database</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-1">
+          <div class="tech-logo">🔴</div>
+          <span class="tech-name">Redis</span>
+          <span class="tech-desc">InMemory Caching</span>
+        </div>
+        <div class="tech-card glass-card fade-in-up delay-2">
+          <div class="tech-logo">⚙️</div>
+          <span class="tech-name">GitHub Actions</span>
+          <span class="tech-desc">Automated CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. INDUSTRIES WE SERVE — CONNECTED AI ECOSYSTEM -->
+  <section class="industries" id="industries">
+    <!-- SUBTLE BACKGROUND ORBS & GLOW PATTERNS -->
+    <div class="eco-bg-glow"></div>
+
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">INDUSTRIES</span>
+        <h2 class="section-title">Industries We <span class="highlight-gradient">Serve</span></h2>
+        <p class="section-subtitle">Delivering transformative AI solutions across diverse sectors</p>
+      </div>
+
+      <!-- MAIN CONNECTED ECOSYSTEM STAGE -->
+      <div class="ecosystem-container">
+        
+        <!-- SVG CONNECTOR NETWORK WITH ANIMATED DASHED LINES & GLOWING NODES -->
+        <svg class="eco-svg-network" viewBox="0 0 860 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lineGradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#9333EA" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.8"/>
+            </linearGradient>
+            <linearGradient id="lineGradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.6"/>
+            </linearGradient>
+            <linearGradient id="lineGradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10B981" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.8"/>
+            </linearGradient>
+            <linearGradient id="lineGradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F97316" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.8"/>
+            </linearGradient>
+            <linearGradient id="lineGradPink" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#EC4899" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.8"/>
+            </linearGradient>
+            <linearGradient id="lineGradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.8"/>
+            </linearGradient>
+          </defs>
+
+          <!-- CONNECTING DASHED LINES TO CENTER HUB (430, 240) -->
+          <path id="path-healthcare" d="M 240 85 C 280 110, 320 145, 355 175" stroke="#9333EA" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+          <path id="path-fintech" d="M 620 85 C 580 110, 540 145, 505 175" stroke="#0284C7" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+          <path id="path-retail" d="M 220 240 L 350 240" stroke="#10B981" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+          <path id="path-manufacturing" d="M 640 240 L 510 240" stroke="#F97316" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+          <path id="path-edtech" d="M 240 395 C 280 370, 320 335, 355 305" stroke="#EC4899" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+          <path id="path-saas" d="M 620 395 C 580 370, 540 335, 505 305" stroke="#06B6D4" stroke-width="2.8" stroke-dasharray="6 5" class="eco-path" />
+
+          <!-- GLOWING CONNECTION NODES -->
+          <circle cx="355" cy="175" r="4.5" fill="#9333EA" class="node-pulse" />
+          <circle cx="505" cy="175" r="4.5" fill="#0284C7" class="node-pulse" />
+          <circle cx="350" cy="240" r="4.5" fill="#10B981" class="node-pulse" />
+          <circle cx="510" cy="240" r="4.5" fill="#F97316" class="node-pulse" />
+          <circle cx="355" cy="305" r="4.5" fill="#EC4899" class="node-pulse" />
+          <circle cx="505" cy="305" r="4.5" fill="#06B6D4" class="node-pulse" />
+        </svg>
+
+        <!-- CENTER HUB: BRAIN / CORE OF AI ECOSYSTEM -->
+        <div class="eco-center-hub glass-card fade-in-up">
+          <div class="hub-ring ring-1"></div>
+          <div class="hub-ring ring-2"></div>
+          <div class="hub-ring ring-3"></div>
+          <div class="hub-glow-aura"></div>
+          
+          <div class="hub-content">
+            <div class="hub-ai-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v3m0 14v3M2 12h3m14 0h3M5.636 5.636l2.122 2.122m8.484 8.484l2.122 2.122M5.636 18.364l2.122-2.122m8.484-8.484l2.122-2.122" />
+              </svg>
+            </div>
+            <h3 class="hub-heading">AI-Powered<br /><span class="highlight-gradient">Solutions</span></h3>
+            <p class="hub-subtext">Transforming industries through intelligent innovation</p>
+          </div>
+        </div>
+
+        <!-- 6 INDUSTRY FLOATING CARDS -->
+        <!-- 1. TOP LEFT: HEALTHCARE -->
+        <div class="eco-card top-left purple glass-card fade-in-up" data-path="path-healthcare">
+          <div class="eco-card-icon purple-bg">🏥</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">Healthcare &amp; Life Sciences</h3>
+            <p class="eco-card-desc">AI-driven diagnostics, drug discovery &amp; patient care solutions</p>
+          </div>
+        </div>
+
+        <!-- 2. TOP RIGHT: FINTECH -->
+        <div class="eco-card top-right blue glass-card fade-in-up" data-path="path-fintech">
+          <div class="eco-card-icon blue-bg">🏦</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">Fintech &amp; Banking</h3>
+            <p class="eco-card-desc">Intelligent analytics, fraud detection &amp; risk management</p>
+          </div>
+        </div>
+
+        <!-- 3. MIDDLE LEFT: RETAIL -->
+        <div class="eco-card mid-left green glass-card fade-in-up" data-path="path-retail">
+          <div class="eco-card-icon green-bg">🛒</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">Retail &amp; E-Commerce</h3>
+            <p class="eco-card-desc">Personalized experiences, demand forecasting &amp; smart automation</p>
+          </div>
+        </div>
+
+        <!-- 4. MIDDLE RIGHT: MANUFACTURING -->
+        <div class="eco-card mid-right orange glass-card fade-in-up" data-path="path-manufacturing">
+          <div class="eco-card-icon orange-bg">🏭</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">Manufacturing &amp; Logistics</h3>
+            <p class="eco-card-desc">Predictive maintenance, supply chain optimization &amp; smart operations</p>
+          </div>
+        </div>
+
+        <!-- 5. BOTTOM LEFT: EDTECH -->
+        <div class="eco-card bot-left pink glass-card fade-in-up" data-path="path-edtech">
+          <div class="eco-card-icon pink-bg">🎓</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">EdTech &amp; Learning</h3>
+            <p class="eco-card-desc">Personalized learning, intelligent tutoring &amp; performance analytics</p>
+          </div>
+        </div>
+
+        <!-- 6. BOTTOM RIGHT: SAAS -->
+        <div class="eco-card bot-right cyan glass-card fade-in-up" data-path="path-saas">
+          <div class="eco-card-icon cyan-bg">☁️</div>
+          <div class="eco-card-text">
+            <h3 class="eco-card-title">SaaS &amp; Enterprise Software</h3>
+            <p class="eco-card-desc">Scalable AI solutions, automation &amp; enterprise intelligence</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ABOUT / COMPANY SECTION -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="company-content">
+        <div class="company-left fade-in-up">
+          <span class="section-tag">About NNR</span>
+          <h2 class="section-title">Engineering the <span class="highlight-gradient">Future of AI</span></h2>
+          <p class="company-desc">NNR Global Technologies is a premier AI product engineering firm. We collaborate with visionary founders and global enterprises to turn complex AI research into scalable, market-leading products.</p>
+
+          <div class="company-values">
+            <div class="value-item">
+              <div class="value-icon">💡</div>
+              <div>
+                <h4>Innovation First</h4>
+                <p>We push technological boundaries using state-of-the-art AI architectures and best engineering practices.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🎯</div>
+              <div>
+                <h4>Client-Centric Excellence</h4>
+                <p>Every line of code and model we build is aligned directly with measurable business ROI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="company-right glass-card fade-in-right">
+          <div class="company-stat-card">
+            <span class="cs-number">150+</span>
+            <span class="cs-label">Products Shipped Globally</span>
+          </div>
+          <div class="company-stat-card">
+            <span class="cs-number">15+</span>
+            <span class="cs-label">Countries Served</span>
+          </div>
+          <div class="company-stat-card">
+            <span class="cs-number">99.9%</span>
+            <span class="cs-label">Uptime Delivered</span>
+          </div>
+          <div class="company-stat-card">
+            <span class="cs-number">24/7</span>
+            <span class="cs-label">Dedicated Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CAREERS SECTION -->
+  <section class="careers" id="careers">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Join Our Team</span>
+        <h2 class="section-title">Build the <span class="highlight-gradient">Next Generation</span></h2>
+        <p class="section-subtitle">Work on cutting-edge AI products alongside elite engineers and builders</p>
+      </div>
+
+      <div class="careers-grid">
+        <div class="career-card glass-card fade-in-up delay-1">
+          <div class="career-header">
+            <span class="career-role-icon">🧠</span>
+            <span class="career-badge-open">Open Role</span>
+          </div>
+          <h3 class="career-title">Senior AI/ML Engineer</h3>
+          <p class="career-type">Remote / Full-Time</p>
+          <p class="career-desc">Lead the development of custom LLM RAG pipelines and deep learning model deployment.</p>
+          <div class="career-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">LLMs</span>
+          </div>
+          <a href="contact.html" class="card-link">Apply Now <span>&#8594;</span></a>
+        </div>
+
+        <div class="career-card glass-card fade-in-up delay-2">
+          <div class="career-header">
+            <span class="career-role-icon">💻</span>
+            <span class="career-badge-open">Open Role</span>
+          </div>
+          <h3 class="career-title">Full Stack Tech Lead</h3>
+          <p class="career-type">Remote / Full-Time</p>
+          <p class="career-desc">Architect scalable React/Next.js and Node microservices for enterprise AI platforms.</p>
+          <div class="career-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Docker</span>
+          </div>
+          <a href="contact.html" class="card-link">Apply Now <span>&#8594;</span></a>
+        </div>
+
+        <div class="career-card glass-card fade-in-up delay-3">
+          <div class="career-header">
+            <span class="career-role-icon">🎨</span>
+            <span class="career-badge-open">Open Role</span>
+          </div>
+          <h3 class="career-title">Product UI/UX Designer</h3>
+          <p class="career-type">Remote / Full-Time</p>
+          <p class="career-desc">Design intuitive, futuristic user interfaces and interactive design systems for AI SaaS tools.</p>
+          <div class="career-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Prototyping</span>
+          </div>
+          <a href="contact.html" class="card-link">Apply Now <span>&#8594;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER SECTION -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <svg class="nav-logo-svg" viewBox="0 0 310 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(4, 8) scale(0.85)">
+                <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0EA5E9" stroke-width="2" fill="none" transform="rotate(0 30 30)"/>
+                <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0284C7" stroke-width="2" fill="none" transform="rotate(60 30 30)"/>
+                <ellipse cx="30" cy="30" rx="27" ry="10" stroke="#0EA5E9" stroke-width="2" fill="none" transform="rotate(-60 30 30)"/>
+                <circle cx="30" cy="30" r="4" fill="#0EA5E9"/>
+              </g>
+              <line x1="72" y1="12" x2="72" y2="58" stroke="#0EA5E9" stroke-width="1.5" opacity="0.3"/>
+              <text x="84" y="45" font-family="'Sora','Inter',sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" letter-spacing="2">NNR</text>
+              <text x="85" y="57" font-family="'Sora','Inter',sans-serif" font-weight="600" font-size="8" fill="#0EA5E9" opacity="0.9" letter-spacing="3.5">GLOBAL TECHNOLOGIES</text>
+            </svg>
+          </a>
+          <p class="footer-desc">We build intelligent digital products that help businesses innovate, scale and lead the future.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter X" title="Twitter X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#expertise">Expertise</a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Company</h4>
+          <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#careers">Careers</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#privacy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 NNR Global Technologies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">✅</div>
+    <div class="toast-msg">Connecting to NNR Global Technologies...</div>
+  </div>
+
+  <!-- THREE.JS IMPORT MAP -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

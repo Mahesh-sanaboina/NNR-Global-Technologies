@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <!-- Cyan Soft Glow Gradient for Right Side -->
+    <radialGradient id="rightCyanGlow" cx="88%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.75" />
+      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="65%" stop-color="#BAE6FD" stop-opacity="0.2" />
+      <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Top Soft Ambient Aura -->
+    <radialGradient id="topSoftAura" cx="70%" cy="15%" r="50%">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="paperTexture" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M0,50 Q50,0 100,50 T200,50" fill="none" stroke="rgba(15, 23, 42, 0.012)" stroke-width="1" />
+      <path d="M0,150 Q50,100 100,150 T200,150" fill="none" stroke="rgba(15, 23, 42, 0.012)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- 1. Pure Crisp White Base -->
+  <rect width="1920" height="1080" fill="#FFFFFF" />
+
+  <!-- 2. Soft Cyan Aura Right -->
+  <rect width="1920" height="1080" fill="url(#rightCyanGlow)" />
+  <rect width="1920" height="1080" fill="url(#topSoftAura)" />
+
+  <!-- 3. Fine Subtle Texture -->
+  <rect width="1920" height="1080" fill="url(#paperTexture)" opacity="0.6" />
+</svg>
