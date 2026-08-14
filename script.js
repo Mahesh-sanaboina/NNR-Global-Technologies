@@ -330,9 +330,29 @@ import * as THREE from 'three';
 
   const hamburger = $('#hamburger');
   const navMenu = $('#nav-menu');
+
+  function closeNav() {
+    hamburger && hamburger.classList.remove('active');
+    navMenu && navMenu.classList.remove('open');
+  }
+
   hamburger && hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu && navMenu.classList.toggle('open');
+  });
+
+  // Close nav when a link is tapped (mobile)
+  $$('.nav-link').forEach(link => {
+    link.addEventListener('click', closeNav);
+  });
+
+  // Close nav when tapping outside
+  document.addEventListener('click', (e) => {
+    if (navMenu && navMenu.classList.contains('open')) {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        closeNav();
+      }
+    }
   });
 
   // Smooth Scroll for internal hash anchors on the same page

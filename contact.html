@@ -92,7 +92,7 @@
             
             <div class="contact-info-list">
               <div class="contact-info-item">
-                <div class="contact-info-icon">📧</div>
+                <div class="contact-info-icon"><i data-lucide="mail"></i></div>
                 <div>
                   <span class="info-label">Email Us Directly</span>
                   <span class="info-value">hello@nnrglobaltech.com</span>
@@ -100,7 +100,7 @@
               </div>
 
               <div class="contact-info-item">
-                <div class="contact-info-icon">⚡</div>
+                <div class="contact-info-icon"><i data-lucide="zap"></i></div>
                 <div>
                   <span class="info-label">Guaranteed Response</span>
                   <span class="info-value">Within 24 Hours</span>
@@ -108,7 +108,7 @@
               </div>
 
               <div class="contact-info-item">
-                <div class="contact-info-icon">🌐</div>
+                <div class="contact-info-icon"><i data-lucide="globe"></i></div>
                 <div>
                   <span class="info-label">Global Engineering Hub</span>
                   <span class="info-value">Worldwide Remote AI Team</span>
@@ -168,7 +168,21 @@
 
   <!-- FOOTER -->
   <footer class="footer">
+    <div class="footer-glow"></div>
     <div class="footer-container">
+      
+      <!-- PRE-FOOTER CTA -->
+      <div class="footer-cta glass-card fade-in-up">
+        <div class="cta-content">
+          <h3 class="cta-title">Ready to build the future?</h3>
+          <p class="cta-desc">Let's collaborate to build your next breakthrough AI product.</p>
+        </div>
+        <a href="contact.html" class="btn-primary-gradient">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+      </div>
+
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
@@ -218,6 +232,15 @@
             <a href="#privacy">Privacy Policy</a>
           </div>
         </div>
+        
+        <div class="footer-newsletter">
+          <h4 class="footer-links-title">Stay Updated</h4>
+          <p class="newsletter-desc">Subscribe to our newsletter for the latest AI insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+          </form>
+        </div>
       </div>
 
       <div class="footer-bottom">
@@ -228,9 +251,15 @@
 
   <!-- TOAST NOTIFICATION -->
   <div class="toast" id="toast">
-    <div class="toast-icon">✅</div>
+    <div class="toast-icon"><i data-lucide="check-circle"></i></div>
     <div class="toast-msg">Connecting to NNR Global Technologies...</div>
   </div>
+
+  <!-- LUCIDE ICONS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 
   <script type="module" src="script.js"></script>
 </body>
