@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NNR AI Product Development Accelerator — Rapid prototyping, model-driven UI generation, and deployment pipelines for scalable AI products." />
+  <title>AI Product Development Accelerator | NNR Global Technologies</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="assets/logo.png" alt="NNR Global Technologies" class="nav-logo-img" />
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#products" class="nav-link active nav-dropdown-trigger">
+            Products <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="product-trading.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="line-chart"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Trading Analytics</span>
+                <span class="dropdown-item-desc">TCA, liquidity estimation & anomaly detection</span>
+              </div>
+            </a>
+            <a href="product-operations.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="briefcase"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Business Operations</span>
+                <span class="dropdown-item-desc">Workflow automation & decision support</span>
+              </div>
+            </a>
+            <a href="product-accelerator.html" class="dropdown-item active">
+              <span class="dropdown-icon"><i data-lucide="rocket"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Product Accelerator</span>
+                <span class="dropdown-item-desc">Rapid prototyping & deployment pipelines</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#careers" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-talk" id="nav-talk-btn">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero">
+    <div class="product-hero-bg">
+      <div class="product-hero-glow accelerator-glow"></div>
+    </div>
+    <div class="section-container">
+      <div class="product-hero-content">
+        <div class="product-hero-left fade-in-up">
+          <span class="product-hero-badge acc-badge">
+            <i data-lucide="rocket"></i>
+            In Active Development
+          </span>
+          <h1 class="product-hero-title">
+            AI Product <span class="highlight-gradient">Development Accelerator</span>
+          </h1>
+          <p class="product-hero-desc">
+            Rapid prototyping and deployment for AI products: prompt-to-UI generation, model-driven scaffolding, automated testing, and one-click deploy pipelines. Validate use cases in days, not months.
+          </p>
+          <div class="product-hero-ctas">
+            <a href="contact.html?product=accelerator" class="btn-primary-gradient">
+              <span>Request Accelerator Access</span>
+              <span class="btn-arrow">&#8594;</span>
+            </a>
+            <a href="contact.html" class="btn-secondary-outline">Book a Discovery Call</a>
+          </div>
+          <div class="product-hero-stats">
+            <div class="ph-stat">
+              <span class="ph-stat-num">10x</span>
+              <span class="ph-stat-label">Faster Prototyping</span>
+            </div>
+            <div class="ph-stat-divider"></div>
+            <div class="ph-stat">
+              <span class="ph-stat-num">Days</span>
+              <span class="ph-stat-label">Not Months</span>
+            </div>
+            <div class="ph-stat-divider"></div>
+            <div class="ph-stat">
+              <span class="ph-stat-num">1-Click</span>
+              <span class="ph-stat-label">Deploy Pipelines</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-hero-right fade-in-right delay-2">
+          <div class="product-hero-visual acc-visual">
+            <div class="visual-code-block">
+              <div class="code-header">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-title">prompt-to-ui.js</span>
+              </div>
+              <pre class="code-body"><span class="code-comment">// Describe your product in plain text</span>
+<span class="code-keyword">const</span> spec = <span class="code-string">"Invoice dashboard with
+  AI anomaly detection
+  and approval workflow"</span>;
+
+<span class="code-comment">// Generate full-stack scaffold</span>
+<span class="code-keyword">await</span> accelerator.<span class="code-fn">generate</span>(spec);
+<span class="code-comment">// ✓ UI generated in 2.3s</span>
+<span class="code-comment">// ✓ API routes scaffolded</span>
+<span class="code-comment">// ✓ Tests created</span>
+<span class="code-comment">// ✓ Ready to deploy</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE CAPABILITIES -->
+  <section class="product-capabilities">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">From Idea to <span class="highlight-gradient">Production</span></h2>
+        <p class="section-subtitle">Everything a product team needs to validate, build, and ship AI-powered features fast.</p>
+      </div>
+      <div class="capabilities-4-grid">
+        <div class="cap-card glass-card fade-in-up delay-1">
+          <div class="cap-icon acc-icon"><i data-lucide="layout"></i></div>
+          <h3>Prompt-to-Prototype</h3>
+          <p>Generate clickable UIs and full-stack scaffolds from natural-language specifications in minutes, not days.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-2">
+          <div class="cap-icon acc-icon"><i data-lucide="git-branch"></i></div>
+          <h3>Model Integration</h3>
+          <p>Plug in LLMs, retrieval-augmented generation (RAG), and structured data sources with prebuilt, production-ready connectors.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-3">
+          <div class="cap-icon acc-icon"><i data-lucide="play-circle"></i></div>
+          <h3>Testing & Deployment</h3>
+          <p>Automated tests, CI/CD pipelines, and one-click deploys to staging and production environments.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-4">
+          <div class="cap-icon acc-icon"><i data-lucide="zap"></i></div>
+          <h3>Team Velocity</h3>
+          <p>Shorten idea-to-validation cycles from months to days with AI coding assistants and low-code backend generation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="product-value-section">
+    <div class="section-container">
+      <div class="product-value-grid">
+        <div class="pv-left fade-in-up">
+          <span class="section-tag">Measurable Impact</span>
+          <h2 class="section-title">10x Faster <span class="highlight-gradient">Concept-to-Prototype</span></h2>
+          <p class="pv-desc">Most AI product ideas die in the gap between "great idea" and "working prototype." Our accelerator eliminates that gap so teams can validate, iterate, and ship faster than ever before.</p>
+          <ul class="pv-list">
+            <li><i data-lucide="check-circle"></i> Prompt → working UI scaffold in under 3 minutes</li>
+            <li><i data-lucide="check-circle"></i> Prebuilt connectors for OpenAI, Anthropic, Cohere, Hugging Face</li>
+            <li><i data-lucide="check-circle"></i> Automated unit, integration, and E2E test generation</li>
+            <li><i data-lucide="check-circle"></i> Deploy to Vercel, AWS, GCP or Azure with one command</li>
+          </ul>
+          <a href="contact.html?product=accelerator" class="btn-primary-gradient" style="margin-top: 24px;">
+            <span>Request Early Access</span>
+            <span class="btn-arrow">&#8594;</span>
+          </a>
+        </div>
+        <div class="pv-right fade-in-right delay-2">
+          <div class="pv-metrics-panel glass-card">
+            <h4 class="pvm-title">Accelerator Snapshot</h4>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">10x</span>
+              <span class="pvm-stat-label">Acceleration in concept-to-prototype cycle times vs. traditional dev</span>
+            </div>
+            <div class="pvm-divider"></div>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">Days</span>
+              <span class="pvm-stat-label">From idea to testable prototype, not weeks or months</span>
+            </div>
+            <div class="pvm-divider"></div>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">Full-stack</span>
+              <span class="pvm-stat-label">Frontend, API, AI model integration, tests and CI/CD included</span>
+            </div>
+            <div class="pvm-pilot-note">
+              <i data-lucide="rocket"></i>
+              Ideal for product teams validating new AI features before heavy engineering investment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="product-how-section">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Engineering Approach</span>
+        <h2 class="section-title">How It <span class="highlight-gradient">Works</span></h2>
+        <p class="section-subtitle">Four phases from idea to live deployment in a matter of days.</p>
+      </div>
+      <div class="how-steps">
+        <div class="how-step fade-in-up delay-1">
+          <div class="how-step-num">01</div>
+          <div class="how-step-content">
+            <h3>Describe Your Product</h3>
+            <p>Write your product spec in plain English. Our AI interprets intent, domain context, and technical requirements.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-2">
+          <div class="how-step-num">02</div>
+          <div class="how-step-content">
+            <h3>Generate Scaffold</h3>
+            <p>Clickable UI, API routes, data models, and AI model integrations are generated and ready to run in minutes.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-3">
+          <div class="how-step-num">03</div>
+          <div class="how-step-content">
+            <h3>Test & Iterate</h3>
+            <p>Automated tests run instantly. Make changes in natural language and see updates reflected in real time.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-4">
+          <div class="how-step-num">04</div>
+          <div class="how-step-content">
+            <h3>Deploy to Production</h3>
+            <p>One-click deploy to your chosen cloud. CI/CD pipeline configured automatically with monitoring included.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="product-cta-section">
+    <div class="section-container">
+      <div class="product-cta-card glass-card fade-in-up">
+        <div class="product-cta-content">
+          <h2>Ready to validate your AI product concept in days?</h2>
+          <p>Request early access and get a hands-on walkthrough of the accelerator framework.</p>
+        </div>
+        <div class="product-cta-actions">
+          <a href="contact.html?product=accelerator" class="btn-primary-gradient">
+            <span>Request Accelerator Access</span>
+            <span class="btn-arrow">&#8594;</span>
+          </a>
+          <a href="index.html#products" class="btn-secondary-outline">View All Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-cta glass-card fade-in-up">
+        <div class="cta-content">
+          <h3 class="cta-title">Ready to build the future?</h3>
+          <p class="cta-desc">Let's collaborate to build your next breakthrough AI product.</p>
+        </div>
+        <a href="contact.html" class="btn-primary-gradient">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+      </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo-light.png" alt="NNR Global Technologies" class="nav-logo-img footer-logo-img" />
+          </a>
+          <p class="footer-desc">We build intelligent digital products that help businesses innovate, scale and lead the future.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Products</h4>
+          <div class="footer-links">
+            <a href="product-trading.html">AI Trading Analytics</a>
+            <a href="product-operations.html">AI Business Operations</a>
+            <a href="product-accelerator.html">AI Product Accelerator</a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Company</h4>
+          <div class="footer-links">
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#careers">Careers</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4 class="footer-links-title">Stay Updated</h4>
+          <p class="newsletter-desc">Subscribe for the latest AI insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NNR Global Technologies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <div class="toast-icon"><i data-lucide="check-circle"></i></div>
+    <div class="toast-msg">Connecting to NNR Global Technologies...</div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <script src="product-page.js"></script>
+</body>
+</html>

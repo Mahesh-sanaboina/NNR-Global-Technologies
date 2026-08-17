@@ -17,6 +17,7 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
 </head>
 
 <body>
@@ -33,7 +34,34 @@
 
       <nav class="nav-menu" id="nav-menu">
         <a href="#home" class="nav-link active">Home</a>
-        <a href="#products" class="nav-link">Products</a>
+        <div class="nav-dropdown">
+          <a href="#products" class="nav-link nav-dropdown-trigger">
+            Products <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="product-trading.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="line-chart"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Trading Analytics</span>
+                <span class="dropdown-item-desc">TCA, liquidity estimation &amp; anomaly detection</span>
+              </div>
+            </a>
+            <a href="product-operations.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="briefcase"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Business Operations</span>
+                <span class="dropdown-item-desc">Workflow automation &amp; decision support</span>
+              </div>
+            </a>
+            <a href="product-accelerator.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="rocket"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Product Accelerator</span>
+                <span class="dropdown-item-desc">Rapid prototyping &amp; deployment pipelines</span>
+              </div>
+            </a>
+          </div>
+        </div>
         <a href="#about" class="nav-link">About</a>
         <a href="#careers" class="nav-link">Careers</a>
         <a href="contact.html" class="nav-link">Contact</a>
@@ -722,10 +750,11 @@
         </div>
 
         <div class="footer-links-group">
-          <h4 class="footer-links-title">Navigation</h4>
+          <h4 class="footer-links-title">Products</h4>
           <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
+            <a href="product-trading.html">AI Trading Analytics</a>
+            <a href="product-operations.html">AI Business Operations</a>
+            <a href="product-accelerator.html">AI Product Accelerator</a>
           </div>
         </div>
 
@@ -777,6 +806,7 @@
   }
   </script>
   <script type="module" src="script.js"></script>
+  <script src="product-page.js"></script>
 </body>
 
 </html>

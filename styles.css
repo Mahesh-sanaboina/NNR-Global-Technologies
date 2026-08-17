@@ -547,6 +547,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .capabilities-deep-dive:hover {
   transform: none !important;
+  background: var(--glass-bg) !important;
   border-color: var(--glass-border) !important;
   box-shadow: var(--shadow-glass) !important;
 }
@@ -1445,14 +1446,21 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  background: linear-gradient(135deg, rgba(14,165,233,0.12) 0%, rgba(2,132,199,0.08) 100%);
-  border: 1px solid rgba(14,165,233,0.25);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(2, 132, 199, 0.08) 100%) !important;
+  border: 1px solid rgba(14, 165, 233, 0.25);
   border-radius: 24px;
   padding: 36px 44px;
   margin: 56px 0 64px;
   backdrop-filter: blur(12px);
   position: relative;
   overflow: hidden;
+  transition: var(--transition);
+}
+.footer-cta:hover {
+  transform: none !important;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.18) 0%, rgba(2, 132, 199, 0.12) 100%) !important;
+  border-color: rgba(14, 165, 233, 0.5) !important;
+  box-shadow: 0 16px 36px rgba(14, 165, 233, 0.15) !important;
 }
 .footer-cta::before {
   content: '';

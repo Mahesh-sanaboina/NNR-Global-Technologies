@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NNR AI Trading Analytics Platform — Pre-trade liquidity estimation, broker-neutral TCA, execution-quality scoring and anomaly detection for equities and futures desks." />
+  <title>AI Trading Analytics Platform | NNR Global Technologies</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="assets/logo.png" alt="NNR Global Technologies" class="nav-logo-img" />
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#products" class="nav-link active nav-dropdown-trigger">
+            Products <i data-lucide="chevron-down" class="dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="product-trading.html" class="dropdown-item active">
+              <span class="dropdown-icon"><i data-lucide="line-chart"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Trading Analytics</span>
+                <span class="dropdown-item-desc">TCA, liquidity estimation & anomaly detection</span>
+              </div>
+            </a>
+            <a href="product-operations.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="briefcase"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Business Operations</span>
+                <span class="dropdown-item-desc">Workflow automation & decision support</span>
+              </div>
+            </a>
+            <a href="product-accelerator.html" class="dropdown-item">
+              <span class="dropdown-icon"><i data-lucide="rocket"></i></span>
+              <div>
+                <span class="dropdown-item-title">AI Product Accelerator</span>
+                <span class="dropdown-item-desc">Rapid prototyping & deployment pipelines</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#careers" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-talk" id="nav-talk-btn">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero">
+    <div class="product-hero-bg">
+      <div class="product-hero-glow trading-glow"></div>
+    </div>
+    <div class="section-container">
+      <div class="product-hero-content">
+        <div class="product-hero-left fade-in-up">
+          <span class="product-hero-badge">
+            <i data-lucide="line-chart"></i>
+            In Active Development
+          </span>
+          <h1 class="product-hero-title">
+            AI Trading <span class="highlight-gradient">Analytics Platform</span>
+          </h1>
+          <p class="product-hero-desc">
+            Pre-trade liquidity and cost estimation, broker-neutral post-trade TCA, execution-quality scoring, and anomaly detection for slippage and latency. Built for equities and futures desks that need measurable edge and audit-ready analytics.
+          </p>
+          <div class="product-hero-ctas">
+            <a href="contact.html?product=trading" class="btn-primary-gradient">
+              <span>Request Pilot Brief</span>
+              <span class="btn-arrow">&#8594;</span>
+            </a>
+            <a href="contact.html" class="btn-secondary-outline">Book a Discovery Call</a>
+          </div>
+          <div class="product-hero-stats">
+            <div class="ph-stat">
+              <span class="ph-stat-num">-20%</span>
+              <span class="ph-stat-label">Slippage Reduction</span>
+            </div>
+            <div class="ph-stat-divider"></div>
+            <div class="ph-stat">
+              <span class="ph-stat-num">Real-time</span>
+              <span class="ph-stat-label">Anomaly Alerts</span>
+            </div>
+            <div class="ph-stat-divider"></div>
+            <div class="ph-stat">
+              <span class="ph-stat-num">Broker-Neutral</span>
+              <span class="ph-stat-label">TCA Engine</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-hero-right fade-in-right delay-2">
+          <div class="product-hero-visual trading-visual">
+            <div class="visual-card-stack">
+              <div class="visual-metric-card vc-1">
+                <div class="vc-label">Execution Score</div>
+                <div class="vc-value gradient-text">94.2</div>
+                <div class="vc-trend up"><i data-lucide="trending-up"></i> +3.1%</div>
+              </div>
+              <div class="visual-metric-card vc-2">
+                <div class="vc-label">Slippage (bps)</div>
+                <div class="vc-value gradient-text">2.4</div>
+                <div class="vc-trend down"><i data-lucide="trending-down"></i> -20%</div>
+              </div>
+              <div class="visual-metric-card vc-3">
+                <div class="vc-label">Anomaly Alerts</div>
+                <div class="vc-value gradient-text">0</div>
+                <div class="vc-trend neutral"><i data-lucide="shield-check"></i> Clear</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE CAPABILITIES -->
+  <section class="product-capabilities">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">What the Platform <span class="highlight-gradient">Does</span></h2>
+        <p class="section-subtitle">A full-stack analytics engine covering every phase of trade lifecycle.</p>
+      </div>
+      <div class="capabilities-4-grid">
+        <div class="cap-card glass-card fade-in-up delay-1">
+          <div class="cap-icon"><i data-lucide="trending-up"></i></div>
+          <h3>Pre-trade Analytics</h3>
+          <p>Liquidity profiling, market-impact and cost estimates, scenario simulation for optimal order scheduling before execution.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-2">
+          <div class="cap-icon"><i data-lucide="bar-chart-2"></i></div>
+          <h3>Post-trade TCA</h3>
+          <p>Broker-neutral transaction cost analysis, execution-quality benchmarks, and actionable recommendations to systematically reduce slippage.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-3">
+          <div class="cap-icon"><i data-lucide="shield-alert"></i></div>
+          <h3>Risk & Anomaly Detection</h3>
+          <p>Real-time alerts for latency spikes, unusual fill patterns, and regime changes with configurable threshold management.</p>
+        </div>
+        <div class="cap-card glass-card fade-in-up delay-4">
+          <div class="cap-icon"><i data-lucide="database"></i></div>
+          <h3>Data Foundation</h3>
+          <p>Normalized tick and order-book data, full audit trails, and role-based access controls built for compliance teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="product-value-section">
+    <div class="section-container">
+      <div class="product-value-grid">
+        <div class="pv-left fade-in-up">
+          <span class="section-tag">Measurable Impact</span>
+          <h2 class="section-title">Built for <span class="highlight-gradient">Measurable Edge</span></h2>
+          <p class="pv-desc">Equities and futures desks using structured TCA and pre-trade analytics consistently outperform those relying on intuition alone. Our platform makes this accessible without vendor lock-in.</p>
+          <ul class="pv-list">
+            <li><i data-lucide="check-circle"></i> Reduce execution costs with broker-agnostic scoring</li>
+            <li><i data-lucide="check-circle"></i> Audit-ready analytics with encrypted data & role-based logs</li>
+            <li><i data-lucide="check-circle"></i> Early anomaly detection to avoid costly execution errors</li>
+            <li><i data-lucide="check-circle"></i> Integrates with existing OMS, EMS and data warehouses</li>
+          </ul>
+          <a href="contact.html?product=trading" class="btn-primary-gradient" style="margin-top: 24px;">
+            <span>Apply for 6-Week Pilot</span>
+            <span class="btn-arrow">&#8594;</span>
+          </a>
+        </div>
+        <div class="pv-right fade-in-right delay-2">
+          <div class="pv-metrics-panel glass-card">
+            <h4 class="pvm-title">Pilot Program Snapshot</h4>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">-20%</span>
+              <span class="pvm-stat-label">Slippage reduction observed in first 6-week pilot run</span>
+            </div>
+            <div class="pvm-divider"></div>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">6–8 wk</span>
+              <span class="pvm-stat-label">Pilot duration with defined success KPIs and daily reports</span>
+            </div>
+            <div class="pvm-divider"></div>
+            <div class="pvm-stat-row">
+              <span class="pvm-stat-num">100%</span>
+              <span class="pvm-stat-label">Broker neutral — no vendor dependency on execution side</span>
+            </div>
+            <div class="pvm-pilot-note">
+              <i data-lucide="lock"></i>
+              Strict security audits, data encryption, and role-based access logs included in every pilot.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="product-how-section">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Engineering Approach</span>
+        <h2 class="section-title">How It <span class="highlight-gradient">Works</span></h2>
+        <p class="section-subtitle">A structured data pipeline from raw market data to actionable insight.</p>
+      </div>
+      <div class="how-steps">
+        <div class="how-step fade-in-up delay-1">
+          <div class="how-step-num">01</div>
+          <div class="how-step-content">
+            <h3>Data Ingestion</h3>
+            <p>Connect tick data, order-book feeds, and execution reports from your OMS/EMS. Normalized into a unified schema.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-2">
+          <div class="how-step-num">02</div>
+          <div class="how-step-content">
+            <h3>Pre-trade Modelling</h3>
+            <p>AI models estimate liquidity, market impact, and optimal execution windows before orders are routed.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-3">
+          <div class="how-step-num">03</div>
+          <div class="how-step-content">
+            <h3>Live Monitoring</h3>
+            <p>Real-time anomaly detection and fill-quality scoring during execution with configurable alert thresholds.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow"><i data-lucide="arrow-right"></i></div>
+        <div class="how-step fade-in-up delay-4">
+          <div class="how-step-num">04</div>
+          <div class="how-step-content">
+            <h3>Post-trade TCA</h3>
+            <p>Automated TCA reports with benchmark comparisons, broker ranking, and actionable cost-reduction recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="product-cta-section">
+    <div class="section-container">
+      <div class="product-cta-card glass-card fade-in-up">
+        <div class="product-cta-content">
+          <h2>Ready to reduce slippage and improve execution quality?</h2>
+          <p>Join our 6-8 week pilot program with defined KPIs and full security compliance.</p>
+        </div>
+        <div class="product-cta-actions">
+          <a href="contact.html?product=trading" class="btn-primary-gradient">
+            <span>Request Pilot Brief</span>
+            <span class="btn-arrow">&#8594;</span>
+          </a>
+          <a href="index.html#products" class="btn-secondary-outline">View All Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-cta glass-card fade-in-up">
+        <div class="cta-content">
+          <h3 class="cta-title">Ready to build the future?</h3>
+          <p class="cta-desc">Let's collaborate to build your next breakthrough AI product.</p>
+        </div>
+        <a href="contact.html" class="btn-primary-gradient">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">&#8594;</span>
+        </a>
+      </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo-light.png" alt="NNR Global Technologies" class="nav-logo-img footer-logo-img" />
+          </a>
+          <p class="footer-desc">We build intelligent digital products that help businesses innovate, scale and lead the future.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Products</h4>
+          <div class="footer-links">
+            <a href="product-trading.html">AI Trading Analytics</a>
+            <a href="product-operations.html">AI Business Operations</a>
+            <a href="product-accelerator.html">AI Product Accelerator</a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Company</h4>
+          <div class="footer-links">
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#careers">Careers</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4 class="footer-links-title">Stay Updated</h4>
+          <p class="newsletter-desc">Subscribe for the latest AI insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NNR Global Technologies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <div class="toast-icon"><i data-lucide="check-circle"></i></div>
+    <div class="toast-msg">Connecting to NNR Global Technologies...</div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  <script src="product-page.js"></script>
+</body>
+</html>
