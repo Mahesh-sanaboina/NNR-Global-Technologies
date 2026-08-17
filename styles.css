@@ -117,6 +117,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-logo { display: flex; align-items: center; }
 .nav-logo-svg { width: 220px; height: 50px; }
+.nav-logo-img {
+  width: 280px;
+  height: 60px;
+  object-fit: contain;
+  object-position: left center;
+  transition: var(--transition-fast);
+}
+.nav-logo-img:hover { filter: brightness(1.12); }
+.footer-logo-img {
+  width: 250px;
+  height: 54px;
+  opacity: 0.92;
+}
 
 .nav-menu {
   display: flex;
@@ -249,8 +262,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.15;
   color: var(--text-dark);
-  margin-bottom: 22px;
+  margin-bottom: 12px;
   letter-spacing: -0.5px;
+}
+
+.hero-sub {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 580px;
+  line-height: 1.6;
 }
 
 .highlight-gradient {
@@ -467,14 +488,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
 }
 
-/* ===== 2. SERVICES SECTION ===== */
+/* ===== 2. SOLUTIONS SECTION ===== */
 .services { padding: 80px 0; position: relative; z-index: 2; }
-.services-grid {
+.solutions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
-.service-card { padding: 24px 22px; border-radius: 18px; }
+.solution-card { padding: 24px 22px; border-radius: 18px; }
 .card-icon-wrapper {
   width: 42px; height: 42px;
   border-radius: 12px;
@@ -484,7 +505,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(14, 165, 233, 0.2);
   transition: var(--transition);
 }
-.service-card:hover .card-icon-wrapper {
+.solution-card:hover .card-icon-wrapper {
   background: rgba(14, 165, 233, 0.16);
   border-color: var(--blue-primary);
   transform: scale(1.05);
@@ -659,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .metric-label { font-size: 11px; color: var(--text-muted); font-weight: 500; }
 
-/* ===== 6. INDUSTRIES WE SERVE — CONNECTED AI ECOSYSTEM ===== */
+/* ===== 6. INDUSTRIES WE SUPPORT — CONNECTED AI ECOSYSTEM ===== */
 .industries {
   padding: 65px 0;
   position: relative;
@@ -1474,7 +1495,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ── 1200px: Tablet Landscape ── */
 @media (max-width: 1200px) {
   .hero-container { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .services-grid, .case-studies-grid, .careers-grid { grid-template-columns: repeat(2, 1fr); }
+  .solutions-grid, .case-studies-grid, .careers-grid { grid-template-columns: repeat(2, 1fr); }
   .tech-grid { grid-template-columns: repeat(3, 1fr); }
   .ai-neural-stage { width: 480px; height: 480px; }
   #threeAiCanvas { width: 440px; height: 440px; }
@@ -1559,8 +1580,8 @@ h1, h2, h3, h4, h5, h6 {
   #threeAiCanvas { width: 260px; height: 260px; }
 
   /* SERVICES */
-  .services-grid { grid-template-columns: 1fr; }
-  .service-card { padding: 24px 20px; }
+  .solutions-grid { grid-template-columns: 1fr; }
+  .solution-card { padding: 24px 20px; }
 
   /* TECH STACK */
   .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }

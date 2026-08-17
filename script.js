@@ -377,7 +377,7 @@ import * as THREE from 'three';
     sections.forEach((sec, sIdx) => {
       // Find all animate-able elements inside this section
       const textElems = $$('.section-tag, .section-title, .section-subtitle, .hero-badge, .hero-heading, .company-desc, .contact-heading, .contact-sub, .contact-title-main, .contact-subtitle-main', sec);
-      const cardElems = $$('.service-card, .product-card, .case-card, .industry-card, .career-card, .eco-card, .eco-center-hub, .contact-card-box, .why-us-box, .company-stat-card', sec);
+      const cardElems = $$('.solution-card, .product-card, .case-card, .industry-card, .career-card, .eco-card, .eco-center-hub, .contact-card-box, .why-us-box, .company-stat-card', sec);
       const iconElems = $$('.card-icon-wrapper, .tech-card, .industry-icon, .tech-logo', sec);
       const btnElems = $$('.btn-primary-gradient, .btn-secondary-outline, .btn-nav-talk, .card-link', sec);
       const imageElems = $$('.case-card-img', sec);
