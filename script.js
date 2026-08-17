@@ -377,7 +377,7 @@ import * as THREE from 'three';
     sections.forEach((sec, sIdx) => {
       // Find all animate-able elements inside this section
       const textElems = $$('.section-tag, .section-title, .section-subtitle, .hero-badge, .hero-heading, .company-desc, .contact-heading, .contact-sub, .contact-title-main, .contact-subtitle-main', sec);
-      const cardElems = $$('.solution-card, .product-card, .case-card, .industry-card, .career-card, .eco-card, .eco-center-hub, .contact-card-box, .why-us-box, .company-stat-card', sec);
+      const cardElems = $$('.solution-card, .product-card, .case-card, .industry-card, .career-card, .eco-card, .eco-center-hub, .contact-card-box, .why-us-box, .company-stat-card, .capabilities-deep-dive, .methodology-card', sec);
       const iconElems = $$('.card-icon-wrapper, .tech-card, .industry-icon, .tech-logo', sec);
       const btnElems = $$('.btn-primary-gradient, .btn-secondary-outline, .btn-nav-talk, .card-link', sec);
       const imageElems = $$('.case-card-img', sec);
@@ -481,6 +481,41 @@ import * as THREE from 'three';
     toast.classList.add('show');
     setTimeout(() => { toast.classList.remove('show'); }, 4000);
   }
+
+  // 6. Interactive Capabilities Tabs Handler
+  const tabButtons = $$('.tab-btn');
+  const tabPanes = $$('.tab-pane');
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tabId = btn.getAttribute('data-tab');
+      if (!tabId) return;
+
+      // Deactivate all buttons and panes
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabPanes.forEach(p => p.classList.remove('active'));
+
+      // Activate clicked button and matching pane
+      btn.classList.add('active');
+      const targetPane = $(`#tab-${tabId}`);
+      if (targetPane) {
+        targetPane.classList.add('active');
+      }
+    });
+  });
+
+  // Handle click on card links to switch active tabs
+  $$('.solutions-grid .card-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const targetTab = link.getAttribute('data-target-tab');
+      if (!targetTab) return;
+
+      const tabBtn = $(`.tab-btn[data-tab="${targetTab}"]`);
+      if (tabBtn) {
+        tabBtn.click(); // Trigger the tab click event
+      }
+    });
+  });
 
   console.log('%c NNR Global Technologies — Engine Active ', 'background: #0284C7; color: #FFFFFF; padding: 8px 16px; border-radius: 8px; font-weight: 900; font-size: 14px;');
 

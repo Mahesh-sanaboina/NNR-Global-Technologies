@@ -124,51 +124,311 @@
       </div>
 
       <div class="solutions-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <!-- Card 1 -->
         <div class="solution-card glass-card fade-in-up delay-1">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
             <div class="card-icon-wrapper" style="margin-bottom: 0;">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
+              <i data-lucide="line-chart" style="width: 20px; height: 20px; color: var(--blue-primary);"></i>
             </div>
             <span class="career-badge-open" style="background: rgba(14, 165, 233, 0.15); color: #0EA5E9; padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 700;">In Progress</span>
           </div>
-          <h3 class="card-title">Nexus LLM Platform</h3>
-          <p class="card-desc">An enterprise-grade Retrieval-Augmented Generation (RAG) system for secure, domain-specific AI conversations and knowledge extraction.</p>
-          <a href="contact.html" class="card-link">Join Waitlist <span>&#8594;</span></a>
+          <h3 class="card-title">AI Trading Analytics</h3>
+          <p class="card-desc">Pre-trade liquidity and cost estimation, broker-neutral post-trade TCA, execution-quality scoring, and anomaly detection for slippage and latency.</p>
+          <a href="#capabilities-deep-dive" class="card-link" data-target-tab="trading">Explore Details <span>&#8594;</span></a>
         </div>
 
+        <!-- Card 2 -->
         <div class="solution-card glass-card fade-in-up delay-2">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
             <div class="card-icon-wrapper" style="margin-bottom: 0;">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
+              <i data-lucide="briefcase" style="width: 20px; height: 20px; color: var(--blue-primary);"></i>
             </div>
             <span class="career-badge-open" style="background: rgba(14, 165, 233, 0.15); color: #0EA5E9; padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 700;">In Progress</span>
           </div>
-          <h3 class="card-title">VisionCore AI</h3>
-          <p class="card-desc">Advanced computer vision engine capable of real-time anomaly detection, spatial mapping, and predictive maintenance for heavy industries.</p>
-          <a href="contact.html" class="card-link">Join Waitlist <span>&#8594;</span></a>
+          <h3 class="card-title">AI Business Operations</h3>
+          <p class="card-desc">Intelligent workflow automation across finance, operations, and IT: invoice extraction, reconciliation, demand forecasting, and IT triage.</p>
+          <a href="#capabilities-deep-dive" class="card-link" data-target-tab="operations">Explore Details <span>&#8594;</span></a>
         </div>
 
+        <!-- Card 3 -->
         <div class="solution-card glass-card fade-in-up delay-3">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
             <div class="card-icon-wrapper" style="margin-bottom: 0;">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              </svg>
+              <i data-lucide="rocket" style="width: 20px; height: 20px; color: var(--blue-primary);"></i>
             </div>
             <span class="career-badge-open" style="background: rgba(14, 165, 233, 0.15); color: #0EA5E9; padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 700;">In Progress</span>
           </div>
-          <h3 class="card-title">SynthData Studio</h3>
-          <p class="card-desc">A platform for generating high-fidelity synthetic datasets to train machine learning models while strictly preserving data privacy and compliance.</p>
-          <a href="contact.html" class="card-link">Join Waitlist <span>&#8594;</span></a>
+          <h3 class="card-title">AI Product Accelerator</h3>
+          <p class="card-desc">Rapid prototyping and deployment: prompt-to-UI generation, model-driven scaffolding, automated testing, and one-click deploy pipelines.</p>
+          <a href="#capabilities-deep-dive" class="card-link" data-target-tab="accelerator">Explore Details <span>&#8594;</span></a>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE CAPABILITY DEEP DIVE -->
+      <div class="capabilities-deep-dive glass-card fade-in-up delay-4" id="capabilities-deep-dive">
+        <div class="capabilities-tabs">
+          <button class="tab-btn active" data-tab="trading">
+            <i data-lucide="line-chart"></i>
+            <span>Trading Analytics</span>
+          </button>
+          <button class="tab-btn" data-tab="operations">
+            <i data-lucide="briefcase"></i>
+            <span>Business Operations</span>
+          </button>
+          <button class="tab-btn" data-tab="accelerator">
+            <i data-lucide="rocket"></i>
+            <span>Product Accelerator</span>
+          </button>
+        </div>
+
+        <div class="tab-contents">
+          <!-- Trading Analytics Tab -->
+          <div class="tab-pane active" id="tab-trading">
+            <div class="tab-pane-grid">
+              <div class="tab-pane-left">
+                <div class="pane-header">
+                  <span class="pane-badge">Active Development</span>
+                  <h3 class="pane-title">AI Trading Analytics Platform</h3>
+                  <p class="pane-tagline">Pre-trade liquidity and cost estimation, broker-neutral post-trade TCA, execution-quality scoring, and anomaly detection for slippage and latency. Built for equities and futures desks that need measurable edge and audit-ready analytics.</p>
+                </div>
+                <div class="pane-features">
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="trending-up"></i></span>
+                    <div>
+                      <h5>Pre-trade analytics</h5>
+                      <p>Liquidity profiling, market-impact and cost estimates, scenario simulation for order scheduling.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="bar-chart-2"></i></span>
+                    <div>
+                      <h5>Post-trade TCA</h5>
+                      <p>Broker-neutral transaction cost analysis, execution-quality benchmarks, and actionable recommendations to reduce slippage.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="shield-alert"></i></span>
+                    <div>
+                      <h5>Risk & anomaly detection</h5>
+                      <p>Real-time alerts for latency spikes, unusual fill patterns, and regime changes.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="database"></i></span>
+                    <div>
+                      <h5>Data foundation</h5>
+                      <p>Normalized tick/order-book data, audit trails, and role-based access for compliance.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane-right">
+                <div class="pane-value-card">
+                  <h4>Measurable Value</h4>
+                  <p><strong>Trading desks:</strong> Reduce execution costs by optimizing order scheduling and broker selection; improve audit readiness with standardized TCA.</p>
+                  <div class="pane-divider"></div>
+                  <h4>Case Snapshot</h4>
+                  <div class="snapshot-stat">
+                    <span class="snapshot-number">-20%</span>
+                    <span class="snapshot-label">Slippage reduction in pilot program run.</span>
+                  </div>
+                </div>
+                <div class="pane-cta-card">
+                  <p>Equities and futures desks looking for a measurable edge:</p>
+                  <a href="contact.html" class="btn-primary-gradient sm">
+                    <span>Request Pilot Brief</span>
+                    <span class="btn-arrow">&#8594;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Operations Tab -->
+          <div class="tab-pane" id="tab-operations">
+            <div class="tab-pane-grid">
+              <div class="tab-pane-left">
+                <div class="pane-header">
+                  <span class="pane-badge">Active Development</span>
+                  <h3 class="pane-title">AI Business Operations Suite</h3>
+                  <p class="pane-tagline">Intelligent workflow automation across finance, operations, and IT: invoice extraction and validation, bank reconciliation, demand forecasting, IT incident triage, and exception monitoring with human-in-the-loop approvals.</p>
+                </div>
+                <div class="pane-features">
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="coins"></i></span>
+                    <div>
+                      <h5>Finance automation</h5>
+                      <p>Invoice parsing, three-way match, payment validation, reconciliation support, and exception routing.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="calendar"></i></span>
+                    <div>
+                      <h5>Operations planning</h5>
+                      <p>Demand forecasting with stockout-aware history, inventory optimization, and supply-risk decision support.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="cpu"></i></span>
+                    <div>
+                      <h5>IT & knowledge workflows</h5>
+                      <p>Ticket triage, incident summarization, policy lookup, and cross-system process automation via APIs.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="users"></i></span>
+                    <div>
+                      <h5>Human oversight</h5>
+                      <p>Approval gates, audit logs, and configurable thresholds to keep control where it matters.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane-right">
+                <div class="pane-value-card">
+                  <h4>Measurable Value</h4>
+                  <p><strong>Finance & operations teams:</strong> Cut manual invoice processing time, accelerate month-end close, lower error rates with automated reconciliation, and prevent stockouts.</p>
+                  <div class="pane-divider"></div>
+                  <h4>Case Snapshot</h4>
+                  <div class="snapshot-stat">
+                    <span class="snapshot-number">60%</span>
+                    <span class="snapshot-label">Reduction in manual invoice processing time.</span>
+                  </div>
+                </div>
+                <div class="pane-cta-card">
+                  <p>Operations leaders interested in custom integrations:</p>
+                  <a href="contact.html" class="btn-primary-gradient sm">
+                    <span>Request Demo Brief</span>
+                    <span class="btn-arrow">&#8594;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Accelerator Tab -->
+          <div class="tab-pane" id="tab-accelerator">
+            <div class="tab-pane-grid">
+              <div class="tab-pane-left">
+                <div class="pane-header">
+                  <span class="pane-badge">Active Development</span>
+                  <h3 class="pane-title">AI Product Development Accelerator</h3>
+                  <p class="pane-tagline">Rapid prototyping and deployment for AI products: prompt-to-UI generation, model-driven scaffolding, automated testing, and one-click deploy pipelines so teams can validate use cases in days, not months.</p>
+                </div>
+                <div class="pane-features">
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="layout"></i></span>
+                    <div>
+                      <h5>Prompt-to-prototype</h5>
+                      <p>Generate clickable UIs and full-stack scaffolds from natural-language specs.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="git-branch"></i></span>
+                    <div>
+                      <h5>Model integration</h5>
+                      <p>Plug in LLMs, retrieval (RAG), and structured data sources with prebuilt connectors.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="play-circle"></i></span>
+                    <div>
+                      <h5>Testing & deployment</h5>
+                      <p>Automated tests, CI/CD pipelines, and one-click deploys to staging/production.</p>
+                    </div>
+                  </div>
+                  <div class="p-feature-item">
+                    <span class="p-feature-icon"><i data-lucide="zap"></i></span>
+                    <div>
+                      <h5>Team velocity</h5>
+                      <p>Shorten idea-to-validation cycles from months to days with AI coding assistants and low-code backends.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane-right">
+                <div class="pane-value-card">
+                  <h4>Measurable Value</h4>
+                  <p><strong>Product teams:</strong> Validate new AI features quickly with rapid prototypes and user testing before heavy engineering investment.</p>
+                  <div class="pane-divider"></div>
+                  <h4>Case Snapshot</h4>
+                  <div class="snapshot-stat">
+                    <span class="snapshot-number">10x</span>
+                    <span class="snapshot-label">Acceleration in concept-to-prototype cycle times.</span>
+                  </div>
+                </div>
+                <div class="pane-cta-card">
+                  <p>Validate your product concept with our framework:</p>
+                  <a href="contact.html" class="btn-primary-gradient sm">
+                    <span>Request Accelerator Access</span>
+                    <span class="btn-arrow">&#8594;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PILOT PROGRAM FOOTER BANNER -->
+        <div class="capabilities-pilot-banner">
+          <div class="pilot-badge">6-8 Week Pilots</div>
+          <div class="pilot-text">
+            <strong>Active Pilot Program:</strong> We partner with selected desks and enterprises for 6-8 week pilots with defined KPIs, strict security audits, data encryption, and role-based access logs.
+          </div>
+          <a href="contact.html" class="btn-secondary-outline sm">Apply for Pilot</a>
         </div>
       </div>
     </div>
-  </section>n>
+  </section>
+
+  <!-- 3. HOW WE BUILD & DEPLOY (METHODOLOGY) -->
+  <section class="methodology" id="methodology">
+    <div class="section-container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Engineering Depth</span>
+        <h2 class="section-title">How We <span class="highlight-gradient">Build &amp; Deploy</span></h2>
+        <p class="section-subtitle">A structured, data-first engineering approach to deliver robust enterprise AI platforms.</p>
+      </div>
+
+      <div class="methodology-grid">
+        <!-- 1. Product-Led Discovery -->
+        <div class="methodology-card fade-in-up delay-1">
+          <div class="m-card-icon">
+            <i data-lucide="compass"></i>
+          </div>
+          <h3 class="m-card-title">Product-Led Discovery</h3>
+          <p class="m-card-desc">We map clear use cases, define key success metrics, and design seamless path-to-adoption strategies before writing code.</p>
+        </div>
+
+        <!-- 2. Data-First Engineering -->
+        <div class="methodology-card fade-in-up delay-2">
+          <div class="m-card-icon">
+            <i data-lucide="database"></i>
+          </div>
+          <h3 class="m-card-title">Data-First Engineering</h3>
+          <p class="m-card-desc">We implement robust ETL data pipelines, feature stores, and automated monitors for model drift and input data quality.</p>
+        </div>
+
+        <!-- 3. Human-in-the-Loop -->
+        <div class="methodology-card fade-in-up delay-3">
+          <div class="m-card-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="m-card-title">Human-in-the-Loop</h3>
+          <p class="m-card-desc">We embed approval gates, auditable explanation layers, and failback mechanisms to ensure decisions remain safe and compliant.</p>
+        </div>
+
+        <!-- 4. Real-World Deployment -->
+        <div class="methodology-card fade-in-up delay-4">
+          <div class="m-card-icon">
+            <i data-lucide="server"></i>
+          </div>
+          <h3 class="m-card-title">Real-World Deployment</h3>
+          <p class="m-card-desc">We build API-first architectures with granular role-based access, easily integrating into ERP, OMS, ticketing, and BI tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -319,7 +579,7 @@
           <span class="section-tag">About NNR</span>
           <h2 class="section-title">Engineering the <span class="highlight-gradient">Future of AI</span></h2>
           <p class="company-desc">We are an AI-first product company building practical software for trading and business transformation. Our focus is on creating scalable, technology-led products with clear use cases, measurable value, and a path to market adoption.</p>
-          <p class="company-desc" style="margin-top: 1rem;">Founded in <strong class="highlight-gradient">Hyderabad</strong>, we are building products with an emphasis on <strong class="highlight-gradient">product innovation</strong>, <strong class="highlight-gradient">engineering depth</strong>, and <strong class="highlight-gradient">real-world deployment</strong>. We actively engage with the startup ecosystem, mentorship networks, and founder communities.</p>
+          <p class="company-desc" style="margin-top: 1rem;">Founded in <strong class="highlight-gradient">Hyderabad</strong>, we build with an emphasis on <strong class="highlight-gradient">product innovation</strong>, <strong class="highlight-gradient">engineering depth</strong>, and <strong class="highlight-gradient">real-world deployment</strong>. We actively engage with the startup ecosystem, mentorship networks, and founder communities—sharing playbooks on AI productization, data governance, and go-to-market for B2B software.</p>
 
           <div class="company-values">
             <div class="value-item">
